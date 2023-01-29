@@ -136,7 +136,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=4321 basicsr
   
 
 
-
+[train.py](..%2Fbasicsr%2Ftrain.py)[train.py](..%2Fbasicsr%2Ftrain.py)
 
 ## Citations
 If NAFSSR helps your research or work, please consider citing NAFSSR.

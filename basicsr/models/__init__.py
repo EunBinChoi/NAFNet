@@ -41,6 +41,7 @@ def create_model(opt):
     if model_cls is None:
         raise ValueError(f'Model {model_type} is not found.')
 
+    print(model_cls)
     model = model_cls(opt)
 
     logger = get_root_logger()

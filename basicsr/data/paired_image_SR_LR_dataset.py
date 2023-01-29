@@ -217,6 +217,7 @@ class PairedStereoImageDataset(data.Dataset):
         gt_path_R = os.path.join(self.gt_folder, self.gt_files[index], 'hr1.png')
 
         img_bytes = self.file_client.get(gt_path_L, 'gt')
+        print(img_bytes)
         try:
             img_gt_L = imfrombytes(img_bytes, float32=True)
         except:

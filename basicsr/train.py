@@ -101,8 +101,8 @@ def create_train_val_dataloader(opt, logger):
         if phase == 'train':
             dataset_enlarge_ratio = dataset_opt.get('dataset_enlarge_ratio', 1)
             train_set = create_dataset(dataset_opt)
-            train_sampler = EnlargedSampler(train_set, opt['world_size'],
-                                            opt['rank'], dataset_enlarge_ratio)
+            train_sampler = EnlargedSampler(train_set, opt['world_size'], opt['rank'], dataset_enlarge_ratio)
+            print(train_sampler)
             train_loader = create_dataloader(
                 train_set,
                 dataset_opt,

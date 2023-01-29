@@ -8,7 +8,7 @@
 name: NAFNet-GoPro-width32
 model_type: ImageRestorationModel
 scale: 1
-num_gpu: 8
+num_gpu: 0
 manual_seed: 42
 
 datasets:
@@ -68,7 +68,7 @@ train:
     T_max: 200000
     eta_min: !!float 1e-7
 
-  total_iter: 200000
+  total_iter: 10 #200000
   warmup_iter: -1 # no warm up
 
   # losses
@@ -104,5 +104,5 @@ logger:
 
 # dist training settings
 dist_params:
-  backend: nccl
-  port: 29500
+  backend: none
+  port: ~
