@@ -7,12 +7,12 @@
 import torch
 
 # from basicsr.data import create_dataloader, create_dataset
-from basicsr.models import create_model
-from basicsr.utils import FileClient, imfrombytes, img2tensor, padding, tensor2img, imwrite, set_random_seed
+from models import create_model
+from utils import FileClient, imfrombytes, img2tensor, padding, tensor2img, imwrite, set_random_seed
 
 import argparse
-from basicsr.utils.options import dict2str, parse
-from basicsr.utils.dist_util import get_dist_info, init_dist
+from utils.options import dict2str, parse
+from utils.dist_util import get_dist_info, init_dist
 import random
 
 def parse_options(is_train=True):
